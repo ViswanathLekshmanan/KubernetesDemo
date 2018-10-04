@@ -1,9 +1,10 @@
+FROM scratch
 MAINTAINER Viswanath Lekshmanan<viswanath@simplogics.com>
 
 EXPOSE 8000
 
-ADD start.sh start.sh
+ADD start.sh script.sh
 
-RUN chmod +x start.sh
+RUN chmod +x script.sh
 
-CMD ./start.sh
+CMD ./script.sh
